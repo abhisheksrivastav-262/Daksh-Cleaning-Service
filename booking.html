@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/favicon.png" type="image/png">
+    <title>Book Deep Cleaning Online | Daksh Cleaning Service</title>
+    <meta name="description" content="Book Daksh Deep Cleaning in 3 quick steps. Enter details, select slot, and confirm via WhatsApp. transparent pricing." />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body class="min-h-screen bg-muted/30">
+    <!-- Header Navigation -->
+    <header class="flex items-center justify-between bg-background px-4 py-3 border-b sticky top-0 z-50 shadow-sm">
+      <a href="index.html" class="flex items-center gap-1.5 sm:gap-2">
+        <img src="assets/logo.png" alt="Daksh Cleaning Service Logo" width="200" height="60" class="h-8 sm:h-10 md:h-12 w-auto" />
+        <span class="text-[10px] sm:text-sm md:text-xl font-bold text-foreground leading-tight">
+          Daksh Cleaning <span class="block sm:inline">Service</span>
+        </span>
+      </a>
+      <div class="flex items-center space-x-2">
+        <a href="tel:+919137294815" class="inline-flex items-center justify-center rounded-full bg-primary text-white hover:bg-primary-dark px-3 py-1.5 text-xs md:text-sm font-semibold shadow-sm transition-all duration-300">
+          <svg class="h-4 w-4 mr-1 md:mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+          </svg>
+          <span>Call Now</span>
+        </a>
+        <a href="https://wa.me/919137294815?text=Hi%20Daksh%20Cleaning%20Service%2C%20I'm%20interested%20in%20your%20deep%20cleaning%20services." target="_blank" class="inline-flex items-center justify-center rounded-full bg-[#25D366] text-white hover:bg-[#1ebe57] px-3 py-1.5 text-xs md:text-sm font-semibold shadow-sm transition-all duration-300">
+          <svg class="h-4 w-4 mr-1 fill-current" viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.968C16.59 2.019 14.137.994 11.998.994c-5.441 0-9.87 4.372-9.874 9.802-.001 1.77.472 3.497 1.373 5.029L2.43 21.082l5.217-1.378zm11.233-6.969c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.669.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.568-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+          </svg>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12 max-w-xl">
+      <!-- Page Title -->
+      <div class="text-center mb-8">
+        <h1 class="text-3xl font-bold text-foreground">Schedule Your Deep Clean</h1>
+        <p class="text-muted-foreground mt-2">Book professional cleaning in Kalyan, Thane & Mumbai MMR</p>
+      </div>
+
+      <!-- Steps Progress Tracker -->
+      <div class="mb-10 bg-white p-6 rounded-2xl border shadow-sm">
+        <div class="flex justify-between items-center relative mb-4">
+          <!-- Connect Line -->
+          <div class="absolute left-0 right-0 top-1/2 h-0.5 bg-muted z-0 -translate-y-1/2"></div>
+          <!-- Progress Bar overlay -->
+          <div class="absolute left-0 top-1/2 h-0.5 bg-primary z-0 -translate-y-1/2 transition-all duration-300" id="progress-bar" style="width: 33.3%"></div>
+
+          <div class="flex flex-col items-center z-10">
+            <div class="step-indicator h-10 w-10 rounded-full flex items-center justify-center font-bold text-sm bg-primary text-white transition-all duration-300">1</div>
+            <span class="text-xs font-semibold mt-2 text-foreground">Details</span>
+          </div>
+          <div class="flex flex-col items-center z-10">
+            <div class="step-indicator h-10 w-10 rounded-full flex items-center justify-center font-bold text-sm bg-muted text-muted-foreground transition-all duration-300">2</div>
+            <span class="text-xs font-semibold mt-2 text-foreground">Schedule</span>
+          </div>
+          <div class="flex flex-col items-center z-10">
+            <div class="step-indicator h-10 w-10 rounded-full flex items-center justify-center font-bold text-sm bg-muted text-muted-foreground transition-all duration-300">3</div>
+            <span class="text-xs font-semibold mt-2 text-foreground">Confirm</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive Booking form container -->
+      <div id="booking-multi-step" class="bg-white rounded-2xl shadow-strong border border-primary/10 overflow-hidden">
+        <div class="p-6 md:p-8">
+          <!-- Step 1: Your Details -->
+          <div class="booking-step-section space-y-6">
+            <h3 class="text-xl font-bold text-foreground">Step 1: Your Service Details</h3>
+            
+            <div class="space-y-4">
+              <div>
+                <label for="booking-name" class="block text-sm font-semibold text-muted-foreground mb-1.5">Full Name</label>
+                <input type="text" id="booking-name" placeholder="John Doe" required class="flex h-12 w-full rounded-lg border border-input bg-background px-3 py-2 text-base focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" />
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label for="booking-mobile" class="block text-sm font-semibold text-muted-foreground mb-1.5">Mobile Number</label>
+                  <input type="tel" id="booking-mobile" placeholder="9123456789" required class="flex h-12 w-full rounded-lg border border-input bg-background px-3 py-2 text-base focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" />
+                </div>
+                <div>
+                  <label for="booking-email" class="block text-sm font-semibold text-muted-foreground mb-1.5">Email Address</label>
+                  <input type="email" id="booking-email" placeholder="john@example.com" class="flex h-12 w-full rounded-lg border border-input bg-background px-3 py-2 text-base focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" />
+                </div>
+              </div>
+
+              <div>
+                <label for="booking-service" class="block text-sm font-semibold text-muted-foreground mb-1.5">Property / Service Type</label>
+                <select id="booking-service" required class="flex h-12 w-full rounded-lg border border-input bg-background px-3 py-2 text-base focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2">
+                  <option value="">Select Service Type</option>
+                  <option value="1BHK Empty Flat Deep Cleaning">1 BHK Empty Flat Deep Cleaning (₹2,999)</option>
+                  <option value="2BHK Empty Flat Deep Cleaning">2 BHK Empty Flat Deep Cleaning (₹3,999)</option>
+                  <option value="3BHK Empty Flat Deep Cleaning">3 BHK Empty Flat Deep Cleaning (₹4,999)</option>
+                  <option value="4BHK Empty Flat Deep Cleaning">4 BHK Empty Flat Deep Cleaning (₹5,999)</option>
+                  <option value="1BHK Furnished Flat Deep Cleaning">1 BHK Furnished Flat Deep Cleaning (₹4,000)</option>
+                  <option value="2BHK Furnished Flat Deep Cleaning">2 BHK Furnished Flat Deep Cleaning (₹5,500)</option>
+                  <option value="3BHK Furnished Flat Deep Cleaning">3 BHK Furnished Flat Deep Cleaning (₹7,000)</option>
+                  <option value="4BHK Furnished Flat Deep Cleaning">4 BHK Furnished Flat Deep Cleaning (₹9,000)</option>
+                  <option value="Sofa Shampooing">Sofa Shampooing (Starts at ₹199/seat)</option>
+                  <option value="Office Deep Cleaning">Office Deep Cleaning (Starts at ₹3,500)</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="booking-address" class="block text-sm font-semibold text-muted-foreground mb-1.5">Full Service Address</label>
+                <textarea id="booking-address" placeholder="Flat No, Wing, Building Name, Landmark, Kalyan East" required class="flex min-h-[80px] w-full rounded-lg border border-input bg-background px-3 py-2 text-base focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"></textarea>
+              </div>
+
+              <div>
+                <label for="booking-pincode" class="block text-sm font-semibold text-muted-foreground mb-1.5">Pin Code (6 digits)</label>
+                <input type="text" id="booking-pincode" placeholder="421306" required class="flex h-12 w-full rounded-lg border border-input bg-background px-3 py-2 text-base focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" />
+              </div>
+            </div>
+
+            <button class="btn-next w-full inline-flex items-center justify-center bg-primary text-white hover:bg-primary-dark h-12 rounded-lg font-bold text-lg shadow-medium transition-all duration-300">
+              Continue to Schedule &rarr;
+            </button>
+          </div>
+
+          <!-- Step 2: Date & Slots -->
+          <div class="booking-step-section space-y-6" style="display: none;">
+            <h3 class="text-xl font-bold text-foreground">Step 2: Choose Date & Time</h3>
+            
+            <div class="space-y-4">
+              <div>
+                <label for="booking-date" class="block text-sm font-semibold text-muted-foreground mb-1.5">Select Preferred Date</label>
+                <input type="date" id="booking-date" required class="flex h-12 w-full rounded-lg border border-input bg-background px-3 py-2 text-base focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" />
+              </div>
+
+              <div>
+                <span class="block text-sm font-semibold text-muted-foreground mb-3">Preferred Time Slot</span>
+                <div class="grid grid-cols-2 gap-3" id="slots-grid">
+                  <button type="button" class="slot-btn border rounded-xl py-3 text-sm font-semibold text-foreground bg-white hover:border-primary transition-all duration-200" data-slot="09:00 AM - Morning Slot">09:00 AM</button>
+                  <button type="button" class="slot-btn border rounded-xl py-3 text-sm font-semibold text-foreground bg-white hover:border-primary transition-all duration-200" data-slot="11:00 AM - Morning Slot">11:00 AM</button>
+                  <button type="button" class="slot-btn border rounded-xl py-3 text-sm font-semibold text-foreground bg-white hover:border-primary transition-all duration-200" data-slot="01:00 PM - Afternoon Slot">01:00 PM</button>
+                  <button type="button" class="slot-btn border rounded-xl py-3 text-sm font-semibold text-foreground bg-white hover:border-primary transition-all duration-200" data-slot="03:00 PM - Afternoon Slot">03:00 PM</button>
+                  <button type="button" class="slot-btn border rounded-xl py-3 text-sm font-semibold text-foreground bg-white hover:border-primary transition-all duration-200" data-slot="05:00 PM - Evening Slot">05:00 PM</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <button class="btn-prev w-1/3 border border-border bg-background hover:bg-muted text-foreground h-12 rounded-lg font-semibold transition-all duration-300">
+                &larr; Back
+              </button>
+              <button class="btn-next w-2/3 bg-primary text-white hover:bg-primary-dark h-12 rounded-lg font-bold text-lg shadow-medium transition-all duration-300">
+                Review Summary &rarr;
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 3: Review & Summary -->
+          <div class="booking-step-section space-y-6" style="display: none;">
+            <h3 class="text-xl font-bold text-foreground">Step 3: Review Booking</h3>
+            
+            <div class="rounded-2xl bg-muted/40 p-5 space-y-4 border text-sm">
+              <div class="border-b pb-2">
+                <span class="text-xs text-muted-foreground uppercase tracking-wider block">Customer Details</span>
+                <div class="font-bold text-foreground mt-0.5" id="summary-name"></div>
+                <div class="text-muted-foreground" id="summary-mobile"></div>
+                <div class="text-muted-foreground" id="summary-email"></div>
+              </div>
+
+              <div class="border-b pb-2">
+                <span class="text-xs text-muted-foreground uppercase tracking-wider block">Requested Package</span>
+                <div class="font-bold text-foreground mt-0.5" id="summary-service"></div>
+              </div>
+
+              <div class="border-b pb-2">
+                <span class="text-xs text-muted-foreground uppercase tracking-wider block">Service Address</span>
+                <div class="text-foreground leading-relaxed mt-0.5" id="summary-address"></div>
+              </div>
+
+              <div>
+                <span class="text-xs text-muted-foreground uppercase tracking-wider block">Appointment Slot</span>
+                <div class="font-bold text-primary mt-0.5" id="summary-datetime"></div>
+              </div>
+            </div>
+
+            <div class="bg-primary/5 rounded-xl border border-primary/20 p-4">
+              <p class="text-xs text-muted-foreground leading-relaxed">
+                👉 <strong>What Happens Next:</strong> Once you click 'Confirm via WhatsApp', you will be redirected to WhatsApp to send your booking confirmation. A Daksh coordinator will reply instantly to confirm the slot and provide the final crew assignment. No advance payment required!
+              </p>
+            </div>
+
+            <div class="flex gap-4">
+              <button class="btn-prev w-1/3 border border-border bg-background hover:bg-muted text-foreground h-12 rounded-lg font-semibold transition-all duration-300">
+                &larr; Back
+              </button>
+              <button id="btn-confirm-whatsapp" class="btn-confirm w-2/3 bg-green-600 hover:bg-green-700 text-white h-12 rounded-lg font-bold text-lg shadow-medium transition-all duration-300 flex items-center justify-center gap-2">
+                Confirm via WhatsApp
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-foreground text-white py-8 border-t border-white/10 mt-20">
+      <div class="container mx-auto px-4 text-center text-xs opacity-60">
+        <p>&copy; 2026 Daksh Cleaning Service. All Rights Reserved. Adapted from cleanzon.co.in clone.</p>
+        <div class="mt-2 space-x-3">
+          <a href="index.html" class="hover:underline">Home</a>
+          <span>•</span>
+          <a href="terms.html" class="hover:underline">Terms of Service</a>
+          <span>•</span>
+          <a href="privacy.html" class="hover:underline">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
