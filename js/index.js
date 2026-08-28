@@ -47,8 +47,50 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Filter cards
                 packageCards.forEach(card => {
                     const cardCategory = card.getAttribute('data-category');
-                    if (category === 'all' || cardCategory === category) {
+                    
+                    // The inner cards for silver/gold (only present in furnished wrapper)
+                    const innerCards = card.querySelectorAll('.bg-white.rounded-2xl.shadow-soft');
+                    
+                    if (category === 'all' || category === cardCategory) {
                         card.style.display = 'block';
+                        // Ensure all inner cards are visible
+                        innerCards.forEach(c => c.style.display = 'flex');
+                    } else if (category === 'silver') {
+                        // Check if this card contains a Silver Package
+                        let hasSilver = false;
+                        innerCards.forEach(c => {
+                            const title = c.querySelector('h4');
+                            if (title && title.textContent.includes('Silver')) {
+                                hasSilver = true;
+                                c.style.display = 'flex';
+                            } else {
+                                c.style.display = 'none';
+                            }
+                        });
+                        
+                        if (hasSilver) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    } else if (category === 'gold') {
+                        // Check if this card contains a Gold Package
+                        let hasGold = false;
+                        innerCards.forEach(c => {
+                            const title = c.querySelector('h4');
+                            if (title && title.textContent.includes('Gold')) {
+                                hasGold = true;
+                                c.style.display = 'flex';
+                            } else {
+                                c.style.display = 'none';
+                            }
+                        });
+                        
+                        if (hasGold) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
                     } else {
                         card.style.display = 'none';
                     }
@@ -66,7 +108,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const name = document.getElementById('hero-name').value.trim();
             const email = document.getElementById('hero-email').value.trim();
             const phone = document.getElementById('hero-phone').value.trim();
-            const serviceType = document.getElementById('hero-service').value;
+            let serviceType = document.getElementById('hero-service').value;
+            const pkg = document.getElementById('hero-package') ? document.getElementById('hero-package').value : '';
+            if (pkg) serviceType += ` - ${pkg}`;
             const area = document.getElementById('hero-area').value.trim();
             const dateTime = document.getElementById('datetime').value;
 
@@ -169,7 +213,10 @@ Please contact me for a free quote.`;
                 formData.name = document.getElementById('booking-name').value.trim();
                 formData.mobile = document.getElementById('booking-mobile').value.trim();
                 formData.email = document.getElementById('booking-email').value.trim();
-                formData.service = document.getElementById('booking-service').value;
+                let serviceVal = document.getElementById('booking-service').value;
+                const pkg = document.getElementById('booking-package') ? document.getElementById('booking-package').value : '';
+                if (pkg) serviceVal += ` - ${pkg}`;
+                formData.service = serviceVal;
                 formData.address = document.getElementById('booking-address').value.trim();
                 formData.pincode = document.getElementById('booking-pincode').value.trim();
 
