@@ -1,0 +1,60 @@
+            <!-- Furnished 1 BHK -->
+            <div class="package-card bg-white rounded-2xl shadow-soft border border-primary/10 overflow-hidden hover:-translate-y-0.5 transition-all duration-300" data-category="furnished">
+              <div class="p-6">
+                <span class="inline-block text-xs font-semibold uppercase tracking-wider text-secondary bg-secondary-light px-2.5 py-1 rounded-full mb-4">Furnished Flat</span>
+                <h3 class="text-xl font-bold text-foreground mb-2">1 BHK Furnished Deep Clean</h3>
+                <p class="text-sm text-muted-foreground mb-4">Includes dry-vacuuming sofas, beds, wardrobes external and deep flat sanitizing.</p>
+                <div class="flex items-baseline space-x-2 mb-6">
+                  <span class="text-3xl font-bold text-primary">₹3,499</span>
+                  <span class="text-sm text-muted-foreground line-through">₹4,700</span>
+                </div>
+                <ul class="space-y-2.5 text-sm text-muted-foreground mb-6">
+                  <li class="flex items-center"><span class="text-primary mr-2">✔</span> Sofa & Mattress vacuuming</li>
+                  <li class="flex items-center"><span class="text-primary mr-2">✔</span> Hard-to-reach dust suction</li>
+                  <li class="flex items-center"><span class="text-primary mr-2">✔</span> Kitchen stove & platform degrease</li>
+                  <li class="flex items-center"><span class="text-primary mr-2">✔</span> Bathroom scale acid scrub</li>
+                </ul>
+                <a href="booking.html?service=1BHK%20Furnished" class="w-full inline-flex items-center justify-center bg-primary text-white py-3 rounded-xl font-bold hover:bg-primary-dark transition-all duration-300">Book Service</a>
+              </div>
+            </div>
+
+            <!-- Furnished 2 BHK -->
+            <div class="package-card bg-white rounded-2xl shadow-soft border border-primary/10 overflow-hidden hover:-translate-y-0.5 transition-all duration-300" data-category="furnished">
+              <div class="p-6">
+                <span class="inline-block text-xs font-semibold uppercase tracking-wider text-secondary bg-secondary-light px-2.5 py-1 rounded-full mb-4">Furnished Flat</span>
+                <h3 class="text-xl font-bold text-foreground mb-2">2 BHK Furnished Deep Clean</h3>
+                <p class="text-sm text-muted-foreground mb-4">Perfect maintenance reset for furnished 2 BHK flats. Fully sanitizes high-contact spots.</p>
+                <div class="flex items-baseline space-x-2 mb-6">
+                  <span class="text-3xl font-bold text-primary">₹3,999</span>
+                  <span class="text-sm text-muted-foreground line-through">₹6,470</span>
+                </div>
+                <ul class="space-y-2.5 text-sm text-muted-foreground mb-6">
+                  <li class="flex items-center"><span class="text-primary mr-2">✔</span> Full furniture surface dusting</li>
+                  <li class="flex items-center"><span class="text-primary mr-2">✔</span> Sofa, dining chairs & bed suction</li>
+                  <li class="flex items-center"><span class="text-primary mr-2">✔</span> Kitchen oil removal & platform</li>
+                  <li class="flex items-center"><span class="text-primary mr-2">✔</span> Two bathrooms thoroughly scrubbed</li>
+                </ul>
+                <a href="booking.html?service=2BHK%20Furnished" class="w-full inline-flex items-center justify-center bg-primary text-white py-3 rounded-xl font-bold hover:bg-primary-dark transition-all duration-300">Book Service</a>
+              </div>
+            </div>
+
+            <!-- Furnished 3 BHK -->
+            <div class="package-card bg-white rounded-2xl shadow-soft border border-primary/10 overflow-hidden hover:-translate-y-0.5 transition-all duration-300" data-category="furnished">
+              <div class="p-6">
+                <span class="inline-block text-xs font-semibold uppercase tracking-wider text-secondary bg-secondary-light px-2.5 py-1 rounded-full mb-4">Furnished Flat</span>
+                <h3 class="text-xl font-bold text-foreground mb-2">3 BHK Furnished Deep Clean</h3>
+                <p class="text-sm text-muted-foreground mb-4">Complete top-to-bottom sanitize package for furnished 3 BHK flats.</p>
+                <div class="flex items-baseline space-x-2 mb-6">
+                  <span class="text-3xl font-bold text-primary">₹4,999</span>
+                  <span class="text-sm text-muted-foreground line-through">₹8,235</span>
+                </div>
+                <ul class="space-y-2.5 text-sm text-muted-foreground mb-6">
+                  <li class="flex items-center"><span class="text-primary mr-2">✔</span> Entire furniture deep sanitize</li>
+                  <li class="flex items-center"><span class="text-primary mr-2">✔</span> Carpets & sofas dry vacuumed</li>
+                  <li class="flex items-center"><span class="text-primary mr-2">✔</span> Kitchen cabinets wiped interior/exterior</li>
+                  <li class="flex items-center"><span class="text-primary mr-2">✔</span> All bathrooms scrubbed & sanitized</li>
+                </ul>
+                <a href="booking.html?service=3BHK%20Furnished" class="w-full inline-flex items-center justify-center bg-primary text-white py-3 rounded-xl font-bold hover:bg-primary-dark transition-all duration-300">Book Service</a>
+              </div>
+            </div>
+

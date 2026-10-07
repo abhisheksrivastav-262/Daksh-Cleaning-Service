@@ -141,12 +141,12 @@
                       <label for="hero-package" class="sr-only">Which Package You Like?</label>
                       <select id="hero-package" aria-label="Which Package You Like?" class="flex h-12 w-full rounded-lg border border-input bg-background px-3 py-2 text-base focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2">
                         <option value="">Which Package You Like? (Optional)</option>
-                        <option value="1 BHK – Silver Package">1 BHK – Silver Package (₹3,499)</option>
-                        <option value="1 BHK – Gold Package">1 BHK – Gold Package (₹4,499)</option>
-                        <option value="2 BHK – Silver Package">2 BHK – Silver Package (₹4,499)</option>
-                        <option value="2 BHK – Gold Package">2 BHK – Gold Package (₹5,499)</option>
-                        <option value="3 BHK – Silver Package">3 BHK – Silver Package (₹4,999)</option>
-                        <option value="3 BHK – Gold Package">3 BHK – Gold Package (₹5,999)</option>
+                        <option value="1 BHK – Standard Package">1 BHK – Standard Package (₹3,499)</option>
+                        <option value="1 BHK – Premium Package">1 BHK – Premium Package (₹4,499)</option>
+                        <option value="2 BHK – Standard Package">2 BHK – Standard Package (₹4,499)</option>
+                        <option value="2 BHK – Premium Package">2 BHK – Premium Package (₹5,499)</option>
+                        <option value="3 BHK – Standard Package">3 BHK – Standard Package (₹4,999)</option>
+                        <option value="3 BHK – Premium Package">3 BHK – Premium Package (₹5,999)</option>
                       </select>
                     </div>
                     
@@ -292,76 +292,15 @@
           <!-- Tab Filters -->
           <div class="flex justify-center flex-wrap gap-2 mb-10 max-w-xl mx-auto">
             <button class="tab-btn px-5 py-2.5 rounded-full font-semibold text-sm bg-primary text-white transition-all shadow-sm" data-tab="all">All Packages</button>
-            <button class="tab-btn px-5 py-2.5 rounded-full font-semibold text-sm bg-muted text-muted-foreground hover:bg-muted/60 transition-all" data-tab="empty">Empty Flat</button>
             <button class="tab-btn px-5 py-2.5 rounded-full font-semibold text-sm bg-muted text-muted-foreground hover:bg-muted/60 transition-all" data-tab="furnished">Furnished Flat</button>
             <button class="tab-btn px-5 py-2.5 rounded-full font-semibold text-sm bg-muted text-muted-foreground hover:bg-muted/60 transition-all" data-tab="commercial">Office & Sofa</button>
-            <button class="tab-btn px-5 py-2.5 rounded-full font-semibold text-sm bg-muted text-muted-foreground hover:bg-muted/60 transition-all" data-tab="silver">Silver Package</button>
-            <button class="tab-btn px-5 py-2.5 rounded-full font-semibold text-sm bg-muted text-muted-foreground hover:bg-muted/60 transition-all" data-tab="gold">Gold Package</button>
+            <button class="tab-btn px-5 py-2.5 rounded-full font-semibold text-sm bg-muted text-muted-foreground hover:bg-muted/60 transition-all" data-tab="silver">Standard Package</button>
+            <button class="tab-btn px-5 py-2.5 rounded-full font-semibold text-sm bg-muted text-muted-foreground hover:bg-muted/60 transition-all" data-tab="gold">Premium Package</button>
             <button class="tab-btn px-5 py-2.5 rounded-full font-semibold text-sm bg-muted text-muted-foreground hover:bg-muted/60 transition-all" data-tab="wall">Wall Wet Wiping</button>
           </div>
 
           <!-- Grid cards -->
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Empty 1 BHK -->
-            <div class="package-card bg-white rounded-2xl shadow-soft border border-primary/10 overflow-hidden hover:-translate-y-0.5 transition-all duration-300" data-category="empty">
-              <div class="p-6">
-                <span class="inline-block text-xs font-semibold uppercase tracking-wider text-primary bg-primary-light px-2.5 py-1 rounded-full mb-4">Empty Flat</span>
-                <h3 class="text-xl font-bold text-foreground mb-2">1 BHK Deep Clean</h3>
-                <p class="text-sm text-muted-foreground mb-4">Perfect for unfurnished or empty flats (up to 500 sq.ft) pre-move in or post-renovation.</p>
-                <div class="flex items-baseline space-x-2 mb-6">
-                  <span class="text-3xl font-bold text-primary">₹2,699</span>
-                  <span class="text-sm text-muted-foreground line-through">₹3,528</span>
-                </div>
-                <ul class="space-y-2.5 text-sm text-muted-foreground mb-6">
-                  <li class="flex items-center"><span class="text-primary mr-2">✔</span> Floor deep scrub & mopping</li>
-                  <li class="flex items-center"><span class="text-primary mr-2">✔</span> Glass sliding windows channels</li>
-                  <li class="flex items-center"><span class="text-primary mr-2">✔</span> Bathroom scrubbing & sanitizing</li>
-                  <li class="flex items-center"><span class="text-primary mr-2">✔</span> Basic kitchen cabinet cleaning</li>
-                </ul>
-                <a href="booking.html?service=1BHK%20Empty" class="w-full inline-flex items-center justify-center bg-primary text-white py-3 rounded-xl font-bold hover:bg-primary-dark transition-all duration-300">Book Service</a>
-              </div>
-            </div>
-
-            <!-- Empty 2 BHK -->
-            <div class="package-card bg-white rounded-2xl shadow-soft border border-primary/10 overflow-hidden hover:-translate-y-0.5 transition-all duration-300" data-category="empty">
-              <div class="p-6">
-                <span class="inline-block text-xs font-semibold uppercase tracking-wider text-primary bg-primary-light px-2.5 py-1 rounded-full mb-4">Empty Flat</span>
-                <h3 class="text-xl font-bold text-foreground mb-2">2 BHK Deep Clean</h3>
-                <p class="text-sm text-muted-foreground mb-4">Detailed scrub down for empty 2 BHK flats (up to 900 sq.ft). Reaches all hidden dust.</p>
-                <div class="flex items-baseline space-x-2 mb-6">
-                  <span class="text-3xl font-bold text-primary">₹3,499</span>
-                  <span class="text-sm text-muted-foreground line-through">₹4,700</span>
-                </div>
-                <ul class="space-y-2.5 text-sm text-muted-foreground mb-6">
-                  <li class="flex items-center"><span class="text-primary mr-2">✔</span> High-power vacuuming</li>
-                  <li class="flex items-center"><span class="text-primary mr-2">✔</span> Window tracks & grills scrubbed</li>
-                  <li class="flex items-center"><span class="text-primary mr-2">✔</span> Two bathrooms sanitized</li>
-                  <li class="flex items-center"><span class="text-primary mr-2">✔</span> Kitchen tile degreasing</li>
-                </ul>
-                <a href="booking.html?service=2BHK%20Empty" class="w-full inline-flex items-center justify-center bg-primary text-white py-3 rounded-xl font-bold hover:bg-primary-dark transition-all duration-300">Book Service</a>
-              </div>
-            </div>
-
-            <!-- Empty 3 BHK -->
-            <div class="package-card bg-white rounded-2xl shadow-soft border border-primary/10 overflow-hidden hover:-translate-y-0.5 transition-all duration-300" data-category="empty">
-              <div class="p-6">
-                <span class="inline-block text-xs font-semibold uppercase tracking-wider text-primary bg-primary-light px-2.5 py-1 rounded-full mb-4">Empty Flat</span>
-                <h3 class="text-xl font-bold text-foreground mb-2">3 BHK Deep Clean</h3>
-                <p class="text-sm text-muted-foreground mb-4">Comprehensive package for spacious 3 BHK empty flats (up to 1600 sq.ft).</p>
-                <div class="flex items-baseline space-x-2 mb-6">
-                  <span class="text-3xl font-bold text-primary">₹3,999</span>
-                  <span class="text-sm text-muted-foreground line-through">₹5,881</span>
-                </div>
-                <ul class="space-y-2.5 text-sm text-muted-foreground mb-6">
-                  <li class="flex items-center"><span class="text-primary mr-2">✔</span> Industrial machinery scrub</li>
-                  <li class="flex items-center"><span class="text-primary mr-2">✔</span> Three bathrooms scrubbed</li>
-                  <li class="flex items-center"><span class="text-primary mr-2">✔</span> Kitchen tiles, slab & cupboards</li>
-                  <li class="flex items-center"><span class="text-primary mr-2">✔</span> Balconies and terrace wash</li>
-                </ul>
-                <a href="booking.html?service=3BHK%20Empty" class="w-full inline-flex items-center justify-center bg-primary text-white py-3 rounded-xl font-bold hover:bg-primary-dark transition-all duration-300">Book Service</a>
-              </div>
-            </div>
-
             <!-- Silver & Gold 1 BHK Group -->
             <div class="col-span-1 md:col-span-2 lg:col-span-3 package-card pt-10 border-t border-primary/10 mt-6" data-category="furnished">
               <div class="text-center mb-6">
@@ -372,7 +311,7 @@
                 <!-- 1 BHK Silver -->
                 <div class="bg-white rounded-2xl shadow-soft border border-primary/10 overflow-hidden hover:-translate-y-0.5 transition-all duration-300">
                   <div class="p-6">
-                    <h4 class="text-xl font-bold package-title silver mb-2">Silver Package</h4>
+                    <h4 class="text-xl font-bold package-title silver mb-2">Standard Package</h4>
 
                     <p class="text-sm text-muted-foreground mb-4">Standard deep cleaning package for 1 BHK furnished flats.</p>
                     <div class="flex items-baseline space-x-2 mb-6">
@@ -393,7 +332,7 @@
                 <div class="bg-white rounded-2xl shadow-soft border border-primary/10 overflow-hidden hover:-translate-y-0.5 transition-all duration-300">
                   <div class="p-6">
 
-                    <h4 class="text-xl font-bold package-title gold mb-2">Gold Package</h4>
+                    <h4 class="text-xl font-bold package-title gold mb-2">Premium Package</h4>
 
                     <p class="text-sm text-muted-foreground mb-4">Premium deep cleaning package with full kitchen handling.</p>
                     <div class="flex items-baseline space-x-2 mb-6">
@@ -424,7 +363,7 @@
                 <div class="bg-white rounded-2xl shadow-soft border border-primary/10 overflow-hidden hover:-translate-y-0.5 transition-all duration-300">
                   <div class="p-6">
 
-                    <h4 class="text-xl font-bold package-title silver mb-2">Silver Package</h4>
+                    <h4 class="text-xl font-bold package-title silver mb-2">Standard Package</h4>
 
                     <p class="text-sm text-muted-foreground mb-4">Standard deep cleaning package for 2 BHK furnished flats.</p>
                     <div class="flex items-baseline space-x-2 mb-6">
@@ -445,7 +384,7 @@
                 <div class="bg-white rounded-2xl shadow-soft border border-primary/10 overflow-hidden hover:-translate-y-0.5 transition-all duration-300">
                   <div class="p-6">
 
-                    <h4 class="text-xl font-bold package-title gold mb-2">Gold Package</h4>
+                    <h4 class="text-xl font-bold package-title gold mb-2">Premium Package</h4>
 
                     <p class="text-sm text-muted-foreground mb-4">Premium deep cleaning package with full kitchen handling.</p>
                     <div class="flex items-baseline space-x-2 mb-6">
@@ -476,7 +415,7 @@
                 <div class="bg-white rounded-2xl shadow-soft border border-primary/10 overflow-hidden hover:-translate-y-0.5 transition-all duration-300">
                   <div class="p-6">
 
-                    <h4 class="text-xl font-bold package-title silver mb-2">Silver Package</h4>
+                    <h4 class="text-xl font-bold package-title silver mb-2">Standard Package</h4>
 
                     <p class="text-sm text-muted-foreground mb-4">Standard deep cleaning package for 3 BHK furnished flats.</p>
                     <div class="flex items-baseline space-x-2 mb-6">
@@ -497,7 +436,7 @@
                 <div class="bg-white rounded-2xl shadow-soft border border-primary/10 overflow-hidden hover:-translate-y-0.5 transition-all duration-300">
                   <div class="p-6">
 
-                    <h4 class="text-xl font-bold package-title gold mb-2">Gold Package</h4>
+                    <h4 class="text-xl font-bold package-title gold mb-2">Premium Package</h4>
 
                     <p class="text-sm text-muted-foreground mb-4">Premium deep cleaning package with full kitchen handling.</p>
                     <div class="flex items-baseline space-x-2 mb-6">

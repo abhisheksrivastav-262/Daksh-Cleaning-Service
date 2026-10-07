@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         // Ensure all inner cards are visible
                         innerCards.forEach(c => c.style.display = 'flex');
                     } else if (category === 'silver') {
-                        // Check if this card contains a Silver Package
+                        // Check if this card contains a Standard Package
                         let hasSilver = false;
                         innerCards.forEach(c => {
                             const title = c.querySelector('h4');
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             card.style.display = 'none';
                         }
                     } else if (category === 'gold') {
-                        // Check if this card contains a Gold Package
+                        // Check if this card contains a Premium Package
                         let hasGold = false;
                         innerCards.forEach(c => {
                             const title = c.querySelector('h4');
