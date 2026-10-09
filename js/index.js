@@ -54,39 +54,39 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (category === 'all' || category === cardCategory) {
                         card.style.display = 'block';
                         // Ensure all inner cards are visible
-                        innerCards.forEach(c => c.style.display = 'flex');
-                    } else if (category === 'silver') {
+                        innerCards.forEach(c => c.style.display = 'block');
+                    } else if (category === 'standard') {
                         // Check if this card contains a Standard Package
-                        let hasSilver = false;
+                        let hasStandard = false;
                         innerCards.forEach(c => {
                             const title = c.querySelector('h4');
-                            if (title && title.textContent.includes('Silver')) {
-                                hasSilver = true;
-                                c.style.display = 'flex';
+                            if (title && (title.textContent.includes('Standard') || title.textContent.includes('Silver'))) {
+                                hasStandard = true;
+                                c.style.display = 'block';
                             } else {
                                 c.style.display = 'none';
                             }
                         });
                         
-                        if (hasSilver) {
+                        if (hasStandard) {
                             card.style.display = 'block';
                         } else {
                             card.style.display = 'none';
                         }
-                    } else if (category === 'gold') {
+                    } else if (category === 'premium') {
                         // Check if this card contains a Premium Package
-                        let hasGold = false;
+                        let hasPremium = false;
                         innerCards.forEach(c => {
                             const title = c.querySelector('h4');
-                            if (title && title.textContent.includes('Gold')) {
-                                hasGold = true;
-                                c.style.display = 'flex';
+                            if (title && (title.textContent.includes('Premium') || title.textContent.includes('Gold'))) {
+                                hasPremium = true;
+                                c.style.display = 'block';
                             } else {
                                 c.style.display = 'none';
                             }
                         });
                         
-                        if (hasGold) {
+                        if (hasPremium) {
                             card.style.display = 'block';
                         } else {
                             card.style.display = 'none';
